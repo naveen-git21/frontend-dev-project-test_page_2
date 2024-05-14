@@ -207,10 +207,12 @@ body {
 .contact-form{
   padding: 25px;
   width: 60%;
+  background-color: ivory;
 }
 .time-contact{
   padding: 25px;
   width: 40%;
+  background-color: rgb(246, 217, 137);
 }
 .contact-form form{
   display: flex;
