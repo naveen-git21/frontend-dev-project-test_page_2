@@ -1,0 +1,188 @@
+<!--  
+
+    this page is to learn the responsive websites which can perform well in pc and mobile devices
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!--to link the font enter the link before the linking of css style sheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"  />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main Header -->
+        <header class="main-header">
+        <!-- Logo Holder -->
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="coder.png" alt="coder logo" width="80px">
+                </a>
+            </div> 
+            <!-- Logo Holder -->
+
+            <!-- Search Holder -->
+            <div class="search-holder">
+                <form action="" method="get">
+                    <input type="search" name="s" placeholder="Search for..">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <!-- Search Holder -->
+        </header>
+        <!-- Main Header -->
+
+        <!--navigation bar-->
+        <nav class="main-menu">
+            <ul class="mobile-menu"> <!--the navigation bar for mobile devices-->
+                <li><a href="#" class="toggler">Menu</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="drop_menu">
+                        <li><a href="#">Service one</a></li>
+                        <li><a href="#">Service two</a></li>
+                        <li><a href="#">Service three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#foot-widget-holder">About</a></li>
+                <li><a href="contact_page.html" >contact</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Banner slider-->
+        <section class="banner_slider">
+            <ul id="adaptive" > <!--the list stle is set to none   -->
+                <li><img src="https://placehold.co/400x200" alt=""></li>
+                <li><img src="https://placehold.co/400x300" alt=""></li>
+                <li><img src="https://placehold.co/600x200" alt=""></li>
+                <li><img src="https://placehold.co/700x300" alt=""></li>
+                <li><img src="https://placehold.co/400x200" alt=""></li>
+            </ul>
+        </section>
+
+        <section class="content_holder">
+            <main class="content">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ducimus nihil magnam, est, dolorem laudantium numquam exercitationem sunt repellat aliquam, praesentium vero eum quasi? Aliquid repellat eveniet earum repellendus nostrum.</p>
+                <p>Eius ex excepturi iste, molestias commodi illo officia, aspernatur recusandae, voluptatibus vero nam necessitatibus quas neque assumenda similique! Error voluptatibus quasi hic praesentium quas animi. Earum fugit harum molestiae nemo.</p>
+                <p>Voluptate inventore ut fuga error ullam. Quas ducimus, eum corrupti quis, expedita tenetur et esse recusandae aliquam incidunt blanditiis cumque dolor, quia accusantium aspernatur. Est eius fuga sapiente autem doloribus!</p>
+                <br>
+                <br>
+                <h2>Sub Heading</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus atque nobis animi ad illo qui corrupti error officiis, numquam unde reiciendis modi nisi ab omnis asperiores quis optio, at ipsum!</p>
+                <p>Tenetur necessitatibus soluta est, sit nemo molestias. Quam consequatur beatae cumque a laboriosam, numquam necessitatibus expedita. Nam, praesentium. Explicabo accusantium dignissimos ipsa quae perspiciatis vitae, corporis eligendi illum laborum vel?</p>
+                <p>Veniam aperiam consequatur praesentium beatae amet. Natus quo ex minima modi repudiandae sit maxime hic illum consequatur quisquam illo, omnis sequi cupiditate, recusandae reprehenderit, assumenda voluptatibus accusantium vel nam animi.</p>
+                <p>Molestiae natus tempore dolorum earum amet maxime recusandae repudiandae error voluptates eaque, odio in suscipit ipsum, quam eius, adipisci iure ab minus labore facere sunt. Corporis illo dolorum necessitatibus alias.</p>
+                <p>Vitae nemo adipisci ipsam, iste ut quia earum, enim maiores doloribus delectus aspernatur asperiores, recusandae non porro rem commodi facere ad molestias eum nobis obcaecati. Aliquid eaque modi corrupti reiciendis!</p>
+
+            </main>
+
+            <!--Side bar for follow information-->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>Follow me on</h3>
+                    <ul>
+                        <li><a href="https://twitter.com/NaveenWarrior1" target="_blank">Twitter</a> </li>
+                        <li><a href="https://www.instagram.com/warrior_naveen/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/naveen-a-/" target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <section class="footer-widget-holder" id="foot-widget-holder">
+            <div class="footer-widget">
+                <a href="#">
+                    <img src="coder.png" alt="Coder logo" width="50px">
+                </a>
+               <h3>Address</h3>
+                <address>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ex reprehenderit.
+                 </address>    
+            </div>
+
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
+            </div>
+        </section>
+
+        <footer class="site_footer">
+                copyright &copy;
+        </footer>
+        
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--jquery source link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" ></script>
+
+<!--to write the jquery -->
+<script>
+    $(document).ready(function() { /*this is the lightslider jquery for slider images*/
+        $('#adaptive').lightSlider({ 
+            adaptiveHeight:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+        });
+
+       /* $('.main-menu > ul:nth-of-type(2)').hide(); this is to hide the list of menu*/
+
+        $('.toggler').click(function() { /*we are creating a jquery function to make the toggle option for our menu*/
+            $('.main-menu > ul:nth-of-type(2)').toggle();
+            $('.drop_menu').css({'display': 'block', 'position': 'relative'});
+        }); 
+
+
+     
+    });
+</script> <!--copy the adaptive and paste this name as a class name to where the images are located-->
+
+</body>
+</html>

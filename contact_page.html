@@ -1,0 +1,206 @@
+<!--  
+
+    this page is to learn the responsive websites which can perform well in pc and mobile devices
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+
+    <!--to link the font enter the link before the linking of css style sheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"  />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main Header -->
+        <header class="main-header">
+        <!-- Logo Holder -->
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="coder.png" alt="coder logo" width="80px">
+                </a>
+            </div> 
+            <!-- Logo Holder -->
+
+            <!-- Search Holder -->
+            <div class="search-holder">
+                <form action="" method="get">
+                    <input type="search" name="s" placeholder="Search for..">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <!-- Search Holder -->
+        </header>
+        <!-- Main Header -->
+
+        <!--navigation bar-->
+        <nav class="main-menu">
+            <ul class="mobile-menu"> <!--the navigation bar for mobile devices-->
+                <li><a href="#" class="toggler">Menu</a></li>
+                
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="drop_menu">
+                        <li><a href="#">Service one</a></li>
+                        <li><a href="#">Service two</a></li>
+                        <li><a href="#">Service three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#foot-widget-holder">About</a></li>
+                <li><a href="#">contact</a></li>
+
+            </ul>
+        </nav>
+
+        <!--gmap-->
+        <section class="gmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.238356957227!2d77.67723877480633!3d9.574710480208676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06dbc06968e9eb%3A0x6cfd8f94e42f98c4!2sKalasalingam%20Academy%20of%20Research%20and%20Education!5e0!3m2!1sen!2sin!4v1715701057510!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-details">
+            <div class="contact-form">
+                <form action="" method="post">
+                    <label for="c_name">
+                        Name:
+                        <input type="text" name="c_name" id="c_name" placeholder="Name">
+                    </label>
+
+                    <label for="c_email">
+                        email:
+                        <input type="email" name="c_email" id="c_email" placeholder="email">
+                    </label>
+
+                    <label for="c_phone">
+                        Phone:
+                        <input type="tel" name="c_phone" id="c_phone" placeholder="Phone number">
+                    </label>
+
+                   
+                    <label for="c_message">
+                        Message
+                        <textarea name="c_message" id="c_message" cols="40" rows="5"></textarea>
+                    </label>
+                    <div id="form-buttons">
+                        <button type="submit"> Send Message</button>
+                        <button type="reset"> Reset</button>
+                    </div>
+                
+                </form>
+            </div>
+
+            <div class="time-contact">
+                <h3>Contact time</h3>
+                <p><strong> Mon - Fri </strong> <time datetime="09:00">09:00 AM</time> - <time datetime="17:00">05:00 PM</time></p>
+                <hr>
+
+                <h3>Contact</h3>
+                <a href="mailto:neoravanan4@gmailcom" target="_blank"> contactme@gmail.com</a>
+                <hr>
+
+                <div class="widget">
+                    <h3>Follow me on</h3>
+                    <ul style="list-style-type: none;">
+                        <li><a href="https://twitter.com/NaveenWarrior1" target="_blank">Twitter</a> </li>
+                        <li><a href="https://www.instagram.com/warrior_naveen/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/naveen-a-/" target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        
+        <section class="footer-widget-holder" id="foot-widget-holder">
+            <div class="footer-widget">
+                <a href="#">
+                    <img src="coder.png" alt="Coder logo" width="50px">
+                </a>
+               <h3>Address</h3>
+                <address>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ex reprehenderit.
+                 </address>    
+            </div>
+
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
+            </div>
+        </section>
+
+        <footer class="site_footer">
+                copyright &copy;
+        </footer>
+        
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--jquery source link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" ></script>
+
+<!--to write the jquery -->
+<script>
+    $(document).ready(function() { /*this is the lightslider jquery for slider images*/
+        $('#adaptive').lightSlider({ 
+            adaptiveHeight:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+        });
+
+       /* $('.main-menu > ul:nth-of-type(2)').hide(); this is to hide the list of menu*/
+
+        $('.toggler').click(function() { /*we are creating a jquery function to make the toggle option for our menu*/
+            $('.main-menu > ul:nth-of-type(2)').toggle();
+            $('.drop_menu').css({'display': 'block', 'position': 'relative'});
+        }); 
+
+
+     
+    });
+</script> <!--copy the adaptive and paste this name as a class name to where the images are located-->
+
+</body>
+</html>

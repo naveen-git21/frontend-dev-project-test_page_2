@@ -1,0 +1,237 @@
+*{   
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  margin: 0px;
+  background-color: aliceblue;
+  
+}
+.container {
+  max-width: 1000px; /*now this website becomes a responsive website*/
+  width: 90%;
+  height: auto;
+  margin: 10px auto; /*it will align the page to the center*/
+  background-color:ghostwhite;
+  border: 2px solid gainsboro;
+  box-shadow: 0px 0px 25px  rgba(0,0,0,0.3);  /*it will give the shadow for page*/
+}
+.main-header {
+  display: flex;
+  justify-content: space-between; /*it will give space between elements in flex*/
+  padding: 25px;
+  max-width: 1000px;
+
+}
+.logo-holder ,
+.search-holder{
+  padding: 5px;
+}
+.search-holder form > input[type="search"] { /*it selects the input field inside the form element which is inside search holder class*/
+  border: 2px solid gainsboro;
+  padding: 10px;
+} 
+
+.search-holder form > button[type="submit"]{  /*don't give space between button[type="submit"] .this selector acts as previous*/
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 0px;
+  margin: 0px;
+}
+
+.main-menu {
+  background-color: dimgray;
+  color: white;
+}
+.main-menu > ul{ /*it is designing about ul but not the elements*/
+  padding: 5px;
+  margin: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+}
+.main-menu ul li a{ /*styling all the list elements in the ul*/
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+.main-menu > ul > li > a:hover {
+    background-color: rgb(157, 147, 147);
+    border: 5px solid rgba(129, 166, 234, 0.747);
+}
+.drop_menu {
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  list-style-type: none;
+  position: absolute; /*it will detach the list from the navigation bar*/
+  display: none;/*it will hide the services list*/
+  }
+.drop_menu  li a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  background-color: rgba(108, 216, 216, 0.922);
+  display: block;
+  width: auto;
+  }
+.drop_menu > li > a:hover {
+  background-color: orange;
+  } 
+.main-menu > ul > li:hover .drop_menu { 
+  display: block;
+}
+
+.banner_slider li { /*this is to justify the image in center position*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_holder{
+  display: flex;
+  justify-content: space-between; /*evenly seperate the content and the sidebar*/
+  background-color: cornsilk;
+  border: 2px solid chocolate;
+}
+
+.content_holder .content{ /*we are selecting the content holder first and then we are selecting the content inside*/
+  width: 75%;
+  background-color: ivory;
+  padding: 20px;
+}
+
+.sidebar{
+  padding: 20px;
+  width: 15%;
+  background-color: rgb(246, 217, 137);
+}
+
+.sidebar .widget ul,
+.footer-widget ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.widget ul li a{
+  text-decoration: none;
+  color: cornflowerblue;
+  padding: 5px;
+}
+.widget ul li a:hover{
+  color: purple;
+}
+.footer-widget-holder{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(68, 67, 67, 0.874) ;
+  color: white;
+  padding: 10px;
+}
+.footer-widget ul li a{
+  color: ghostwhite;
+  text-decoration: none; /*to remove the underlines and amd the related styling*/
+}
+.site_footer{
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+/*mobile menu*/
+.mobile-menu{
+  display: none !important ; /* !important is used to override the previous methods applied */
+}
+
+/*responsible main header */
+@media screen and (max-width:600px) {
+  .main-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-menu {  /*this will enable the mobile menu when the screen size is less*/
+    display: flex !important;
+    justify-content: space-between !important;
+    }
+  .main-menu > ul:nth-of-type(2) { /*inside the main menu it is selecting the second ul element*/
+    flex-direction: column;
+    border-top: 1px solid orangered;
+  } 
+  .drop_menu > li > a { 
+    width: auto;
+  }
+  #adaptive{
+    width: 100%;
+  }
+  .content_holder{
+    display: flex;
+    flex-direction: column;
+  }
+  .content_holder .content,
+  .content_holder .sidebar{
+    width: auto;
+  }
+  .footer-widget-holder {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+
+/******** contact page   *************/
+.gmap{
+  width: auto;
+  height: 400px;
+  border: 1px solid cornsilk;
+  text-align: center;
+}
+.gmap iframe{
+  width: 90%;
+  height: 400px;
+}
+.contact-details{
+  display: flex;
+  justify-content: space-around;
+}
+.contact-form{
+  padding: 25px;
+  width: 60%;
+}
+.time-contact{
+  padding: 25px;
+  width: 40%;
+}
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input,
+.contact-form form textarea{
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0px;
+}
+.contact-form button{
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 0px;
+  border: 1px solid darkgrey;
+  box-shadow: 0 0 5px rgba(150, 149, 149, 0.922);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#form-buttons{
+  text-align: center;
+}
