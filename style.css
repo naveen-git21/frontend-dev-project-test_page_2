@@ -237,3 +237,16 @@ body {
 #form-buttons{
   text-align: center;
 }
+@media screen and (max-width:600px) {
+  .contact-details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-form{
+    width: auto;
+  }
+  .time-contact{
+    width: auto;
+  }
+}
